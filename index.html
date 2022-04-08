@@ -17,6 +17,73 @@
 </head>
 <body>
 
+    <div class="container bg-white">
+
+        <div class="ms-form-item">
+            <label for="user">Nome Cognome</label>
+            <input type="text name="user" id="user">
+        </div>
+
+        <div class="ms-form-item">
+            <label for="user-km">Km da percorrere</label>
+            <input type="text name="user-km" id="user-km">
+        </div>
+
+        <div class="ms-form-item">
+            <label for="user-age">Fascia d'età</label>
+            <select name="user-age" id="user-age">
+                <option value=""></option>
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over65">Over 65</option>
+            </select>
+        </div>
+
+        <button class="" id="form-btn">Genera</button>
+        <button class="" id="form-clear-btn">Annulla</button>
+
+    </div>
+
+    <section class="result d-none">
+        <h2>DETTAGLIO PASSEGGERI</h2>
+
+        <div class="info">
+
+            <h3>NOME PASSEGGERO</h3>
+            <p id="user-ns"></p>
+
+        </div>
+
+        <div class="user-ticket">
+            <div class="discount">
+
+                <h3>Offerta</h3>
+                <p id="ticket-type"></p>
+
+            </div>
+
+            <div class="cab">
+
+                <h4>Carrozza</h4>
+                <p id="n-cab"></p>
+            </div>
+
+            <div class="cp-code">
+
+                <h4>Codice CP</h4>
+                <p id="ms-cp"></p>
+
+            </div>
+
+            <div class="ticket-price">
+
+                <h4>Costo biglietto</h4>
+                <p id="ticket-price"></p>
+
+            </div>
+        </div>
+    </section>
+
     <script type="text/javascript" src="js/script.js"></script>
     
 </body>

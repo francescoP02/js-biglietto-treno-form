@@ -1,3 +1,7 @@
 body {
     background-color: #b91450;
 }
+
+.d-none {
+    display: none;
+}
