@@ -1,7 +1,42 @@
+/* COMMON */
+
 body {
     background-color: #b91450;
 }
 
 .d-none {
     display: none;
+}
+
+.ms-br {
+    border-radius: 1rem;
+}
+
+.ms-form-container {
+    margin: 0 auto;
+}
+
+.ms-center {
+    width: 50%;
+    margin: 0 25%;
+}
+
+/* BTN */
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+/* RESULT */
+
+.ms-bg-gray {
+    background-color: gray;
+}
+
+.ms-margin {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
 }

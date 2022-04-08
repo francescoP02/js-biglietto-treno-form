@@ -17,72 +17,103 @@
 </head>
 <body>
 
-    <div class="container bg-white">
+    <h2 class="text-center text-white py-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-        <div class="ms-form-item">
-            <label for="user">Nome Cognome</label>
-            <input type="text name="user" id="user">
+    <!-- FORM -->
+
+    <div class="container bg-white ms-br">
+
+        <div class="ms-form-container row">
+
+            <!-- FORM NaME SURNAME -->
+
+            <div class="ms-form-item col">
+                <label for="user" class="d-block py-3 text-center">Nome Cognome</label>
+                <input type="text name="user" id="user" class="ms-center">
+            </div>
+            <!-- /FORM NAME SURNAME -->
+    
+            <!-- FORM KM -->
+            <div class="ms-form-item col">
+                <label for="user-km" class="d-block py-3 text-center">Km da percorrere</label>
+                <input type="text name="user-km" id="user-km" class="ms-center">
+            </div>
+            <!-- /FORM KM -->
+    
+            <!-- FORM AGE -->
+            <div class="ms-form-item col">
+                <label for="user-age" class="d-block py-3 text-center">Fascia d'età</label>
+                <select name="user-age" id="user-age" class="ms-center">
+                    <option value=""></option>
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over65">Over 65</option>
+                </select>
+            </div>
+            <!-- /FORM AGE -->
+
         </div>
 
-        <div class="ms-form-item">
-            <label for="user-km">Km da percorrere</label>
-            <input type="text name="user-km" id="user-km">
-        </div>
+        <!-- BTN -->
+        <div class="btn-container">
+            
+            <button class="" id="form-btn">Genera</button>
+            <button class="" id="form-clear-btn">Annulla</button>
 
-        <div class="ms-form-item">
-            <label for="user-age">Fascia d'età</label>
-            <select name="user-age" id="user-age">
-                <option value=""></option>
-                <option value="minorenne">Minorenne</option>
-                <option value="maggiorenne">Maggiorenne</option>
-                <option value="over65">Over 65</option>
-            </select>
         </div>
-
-        <button class="" id="form-btn">Genera</button>
-        <button class="" id="form-clear-btn">Annulla</button>
+        <!-- /BTN -->
 
     </div>
 
-    <section class="result d-none">
-        <h2>DETTAGLIO PASSEGGERI</h2>
+    <!-- RESULT -->
+    <section class="result d-none container">
 
-        <div class="info">
+        <h2 class="text-center text-white py-3">IL TUO BIGLIETTO</h2>
 
-            <h3>NOME PASSEGGERO</h3>
-            <p id="user-ns"></p>
+        <div class="ms-passenger bg-white row">
+
+            <h3 class="pt-3">DETTAGLIO PASSEGGERI</h3>
+
+            <div class="info col-3 ms-bg-gray mb-4 pt-3">
+
+                <h4 class="text-center fw-bolder">NOME PASSEGGERO</h4>
+                <p id="user-ns" class="fw-bolder  text-center"></p>
+
+            </div>
+
+            <div class="user-ticket col-9 row ms-margin mb-4 pt-3">
+                <div class="discount col">
+
+                    <h4 class="pb-4">Offerta</h4>
+                    <p id="ticket-type"></p>
+
+                </div>
+
+                <div class="cab col">
+
+                    <h4 class="pb-4">Carrozza</h4>
+                    <p id="n-cab"></p>
+                </div>
+
+                <div class="cp-code col">
+
+                    <h4 class="pb-4">Codice CP</h4>
+                    <p id="ms-cp"></p>
+
+                </div>
+
+                <div class="ticket-price col">
+
+                    <h4 class="pb-4">Costo biglietto</h4>
+                    <p id="ticket-price"></p>
+
+                </div>
+            </div>
 
         </div>
-
-        <div class="user-ticket">
-            <div class="discount">
-
-                <h3>Offerta</h3>
-                <p id="ticket-type"></p>
-
-            </div>
-
-            <div class="cab">
-
-                <h4>Carrozza</h4>
-                <p id="n-cab"></p>
-            </div>
-
-            <div class="cp-code">
-
-                <h4>Codice CP</h4>
-                <p id="ms-cp"></p>
-
-            </div>
-
-            <div class="ticket-price">
-
-                <h4>Costo biglietto</h4>
-                <p id="ticket-price"></p>
-
-            </div>
-        </div>
+        
     </section>
+    <!-- /RESULT -->
 
     <script type="text/javascript" src="js/script.js"></script>
     
