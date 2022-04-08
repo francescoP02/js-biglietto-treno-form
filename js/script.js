@@ -111,10 +111,17 @@ formClearBtn.addEventListener("click",
         const resultContainer = document.querySelector(".result");
         resultContainer.classList.add("d-none");
 
-        // Ripulsco i campi
-        const userInfo = document.getElementById("user-ns");
+        // Resetta campi form
+
+        const userInfo = document.getElementById("user");
         console.log(userInfo);
         userInfo.value = "";
 
+        const userKm = document.getElementById("user-km");
+        console.log(userKm);
+        userKm.value = "";
+
+        const userAge = document.getElementById("user-age");
+        userAge.value = "";
     }
 );
